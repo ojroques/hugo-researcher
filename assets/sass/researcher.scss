@@ -1,0 +1,34 @@
+@import "variables";
+@import "typography";
+
+* {
+    color: $dark;
+    font-family: "Inconsolata";
+    line-height: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: medium;
+    font-weight: bold;
+    line-height: normal;
+    margin: 1.2rem 0 0.8rem 0;
+}
+@for $i from 1 through 4 {
+    h#{$i} {
+        font-size: 1.2rem + 0.2 * (4 - $i);
+    }
+}
+.container {
+    max-width: $max-width;
+}
+.navbar-brand {
+    @extend %link-dark;
+    font-size: 2rem;
+}
+.nav-link {
+    @extend %link-default;
+}
+footer {
+    a {
+        @extend %link-dark;
+    }
+}

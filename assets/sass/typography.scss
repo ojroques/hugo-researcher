@@ -1,0 +1,66 @@
+@import "variables";
+
+#content {
+    a {
+        @extend %link-default;
+    }
+    ol {
+        counter-reset: list;
+        list-style: none;
+        padding-left: 0;
+        & > li {
+            padding-left: 4ch;
+            text-indent: -4ch;
+            margin: 4px 0;
+            &:before {
+                content: "[" counter(list, decimal) "] ";
+                counter-increment: list;
+            }
+        }
+    }
+    ul {
+        list-style: inside;
+        padding-left: 0;
+        & > li {
+            margin: 4px 0;
+        }
+    }
+    blockquote {
+        border-left: 4px solid;
+        font-style: italic;
+        margin: $margin-y 0;
+        padding: 8px 8px;
+        & p {
+            margin: 0;
+        }
+    }
+    .avatar {
+        border-radius: 50%;
+        float: right;
+        margin: -8px 0 0 16px;
+        height: $avatar-size;
+        width: $avatar-size;
+    }
+    img {
+        display: block;
+        margin: $margin-y auto;
+    }
+    table {
+        margin: $margin-y auto;
+        width: 100%;
+        & tr {
+            background-color: white;
+            border: 1px solid #cccccc;
+            & td {
+                @extend %table-cell;
+            }
+            & th {
+                @extend %table-cell;
+                font-weight: bold;
+            }
+            &:nth-child(2n) {
+                background-color: #f8f8f8;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+// Variables
+$max-width: 750px;
+$avatar-size: 90px;
+$margin-y: 16px;
+$red: #ff0f00;
+$dark: #000000;
+
+// Placeholders
+%link-default {
+    color: $red;
+    text-decoration: none;
+    &:hover {
+        color: $red;
+        text-decoration: underline;
+    }
+}
+%link-dark {
+    color: $dark;
+    text-decoration: none;
+    &:hover {
+        color: $dark;
+        text-decoration: underline;
+    }
+}
+%table-cell {
+    border: 1px solid #cccccc;
+    padding: 6px 12px;
+    text-align: left;
+}
