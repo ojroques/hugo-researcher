@@ -1,0 +1,31 @@
+title = "Researcher"
+baseURL = "https://ojroques.github.io"
+theme = "researcher"
+
+[params]
+  author = "Olivier Roques"
+  description = "A Hugo template."
+  favicon = "favicon.ico"
+  [params.footer]
+    text = "By Olivier Roques"
+    url = "https://github.com/ojroques/hugo-researcher"
+
+[permalinks]
+  "/" = "/:filename"
+
+[menu]
+  [[menu.navbar]]
+    name = "About"
+    url = "/about"
+    weight = 1
+  [[menu.navbar]]
+    name = "Resume"
+    url = "/resume.pdf"
+    weight = 2
+  [[menu.navbar]]
+    name = "Contact"
+    url = "/contact"
+    weight = 3
+
+[markup.goldmark.renderer]
+  unsafe= true
