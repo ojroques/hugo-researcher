@@ -26,6 +26,3 @@ theme = "researcher"
     name = "Contact"
     url = "/contact"
     weight = 3
-
-[markup.goldmark.renderer]
-  unsafe= true

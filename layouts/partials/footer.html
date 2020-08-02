@@ -1,6 +1,6 @@
 {{ with .Site.Params.footer }}
     <hr>
     <div class="container text-center mb-2">
-        <a href="{{ .url }}"><small>{{ .text }}</small></a>
+        <a href="{{ .url | relURL }}"><small>{{ .text }}</small></a>
     </div>
 {{ end }}

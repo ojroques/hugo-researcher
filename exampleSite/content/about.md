@@ -4,7 +4,7 @@ title = "About"
 
 ## About Me
 
-<img class="avatar" src="/avatar.jpg">
+{{< figure class="avatar" src="/avatar.jpg" >}}
 
 This is a jekyll based resume template. You can find the full source code on [GitHub](https://github.com/ojroques/researcher).
 
