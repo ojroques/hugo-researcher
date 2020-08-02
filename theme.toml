@@ -5,7 +5,7 @@ description = "A simple monospaced resume theme for Hugo."
 tags = ["blog", "bootstrap", "clean", "minimal", "personal", "responsive", "resume", "simple"]
 features = ["bootstrap", "responsive", "simple"]
 homepage = "https://github.com/ojroques/hugo-researcher"
-min_version = "0.42.0"
+min_version = "0.74.3"
 
 [author]
   name = "Olivier Roques"

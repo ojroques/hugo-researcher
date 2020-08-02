@@ -9,7 +9,7 @@ the Jekyll theme [ankitsultana/researcher](https://github.com/ankitsultana/resea
 ## Installation
 Add the theme to your site's `themes` directory:
 ```bash
-mkdir themes  # if the themes folder does not exist
+mkdir themes  # if the themes folder does not exist yet
 git clone https://github.com/ojroques/hugo-researcher themes/researcher
 ```
 
