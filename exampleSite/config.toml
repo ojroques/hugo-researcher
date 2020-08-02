@@ -1,10 +1,10 @@
 title = "Researcher"
-baseURL = "https://ojroques.github.io"
+baseURL = "https://example.com"
 theme = "researcher"
 
 [params]
   author = "Olivier Roques"
-  description = "A Hugo template."
+  description = "A single column, monospace, resume theme for Hugo."
   favicon = "favicon.ico"
   [params.footer]
     text = "By Olivier Roques"

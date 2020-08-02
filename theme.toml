@@ -1,7 +1,7 @@
 name = "Researcher"
 license = "GPL-3.0"
 licenselink = "https://github.com/ojroques/hugo-researcher/blob/master/LICENSE"
-description = "A single column, monospace, resume template for Hugo."
+description = "A single column, monospace, resume theme for Hugo."
 homepage = "https://github.com/ojroques/hugo-researcher"
 min_version = "0.42.0"
 
