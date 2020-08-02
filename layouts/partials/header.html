@@ -2,13 +2,15 @@
     <nav class="navbar navbar-expand-sm flex-column flex-sm-row p-0">
         <a class="navbar-brand mr-sm-auto" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
         <div class="navbar-nav flex-row">
-        {{ $navbar_len := len .Site.Menus.navbar }}
-        {{ range $i, $nav_item := .Site.Menus.navbar }}
-            <a class="nav-item nav-link" href="{{ $nav_item.URL | relURL }}">{{ $nav_item.Name }}</a>
-            {{ if ne (add $i 1) $navbar_len }}
-                <span class="nav-item navbar-text mx-1">/</span>
+            {{ with .Site.Menus.navbar }}
+                {{ $navbar_len := len . }}
+                {{ range $i, $nav_item := . }}
+                    <a class="nav-item nav-link" href="{{ $nav_item.URL | relURL }}">{{ $nav_item.Name }}</a>
+                    {{ if ne (add $i 1) $navbar_len }}
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    {{ end }}
+                {{ end }}
             {{ end }}
-        {{ end }}
         </div>
     </nav>
 </div>
