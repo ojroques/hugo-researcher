@@ -1,10 +1,17 @@
 name = "Researcher"
 license = "GPL-3.0"
 licenselink = "https://github.com/ojroques/hugo-researcher/blob/master/LICENSE"
-description = "A single column, monospace, resume theme for Hugo."
+description = "A simple monospaced resume theme for Hugo."
+tags = ["blog", "bootstrap", "clean", "minimal", "personal", "responsive", "resume", "simple"]
+features = ["bootstrap", "responsive", "simple"]
 homepage = "https://github.com/ojroques/hugo-researcher"
 min_version = "0.42.0"
 
 [author]
   name = "Olivier Roques"
   homepage = "https://oroques.dev/"
+
+[original]
+  author = "Ankit Sultana"
+  homepage = "https://github.com/ankitsultana"
+  repo = "https://github.com/ankitsultana/researcher"

@@ -1,10 +1,11 @@
 title = "Researcher"
 baseURL = "https://example.com"
 theme = "researcher"
+enableEmoji = true
 
 [params]
   author = "Olivier Roques"
-  description = "A single column, monospace, resume theme for Hugo."
+  description = "A simple monospaced resume theme for Hugo."
   favicon = "favicon.ico"
   [params.footer]
     text = "By Olivier Roques"
@@ -14,15 +15,18 @@ theme = "researcher"
   "/" = "/:filename"
 
 [menu]
-  [[menu.navbar]]
+  [[menu.main]]
     name = "About"
     url = "/about"
     weight = 1
-  [[menu.navbar]]
+  [[menu.main]]
     name = "Resume"
     url = "/resume.pdf"
     weight = 2
-  [[menu.navbar]]
+  [[menu.main]]
     name = "Contact"
     url = "/contact"
     weight = 3
+
+[markup.goldmark.renderer]
+  unsafe = true

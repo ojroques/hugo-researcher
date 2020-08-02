@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-sm flex-column flex-sm-row p-0">
         <a class="navbar-brand mr-sm-auto" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
         <div class="navbar-nav flex-row">
-            {{ with .Site.Menus.navbar }}
+            {{ with .Site.Menus.main }}
                 {{ $navbar_len := len . }}
                 {{ range $i, $nav_item := . }}
                     <a class="nav-item nav-link" href="{{ $nav_item.URL | relURL }}">{{ $nav_item.Name }}</a>

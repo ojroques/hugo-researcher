@@ -4,6 +4,22 @@
     a {
         @extend %link-default;
     }
+    blockquote {
+        border-left: 4px solid;
+        font-style: italic;
+        margin: $margin-y 0;
+        padding: 8px 8px;
+        & p {
+            margin: 0;
+        }
+    }
+    code {
+        color: $green;
+    }
+    img {
+        display: block;
+        margin: $margin-y auto;
+    }
     ol {
         counter-reset: list;
         list-style: none;
@@ -18,32 +34,15 @@
             }
         }
     }
+    pre code {
+        color: inherit;
+    }
     ul {
         list-style: inside;
         padding-left: 0;
         & > li {
             margin: 4px 0;
         }
-    }
-    blockquote {
-        border-left: 4px solid;
-        font-style: italic;
-        margin: $margin-y 0;
-        padding: 8px 8px;
-        & p {
-            margin: 0;
-        }
-    }
-    .avatar > img {
-        border-radius: 50%;
-        float: right;
-        margin: -8px 0 0 16px;
-        height: $avatar-size;
-        width: $avatar-size;
-    }
-    img {
-        display: block;
-        margin: $margin-y auto;
     }
     table {
         margin: $margin-y auto;
@@ -61,6 +60,19 @@
             &:nth-child(2n) {
                 background-color: #f8f8f8;
             }
+        }
+    }
+    .avatar > img {
+        border-radius: 50%;
+        float: right;
+        margin: -8px 0 0 16px;
+        height: $avatar-size;
+        width: $avatar-size;
+    }
+    .highlight {
+        margin: $margin-y auto;
+        & > pre {
+            padding: 8px 8px;
         }
     }
 }
