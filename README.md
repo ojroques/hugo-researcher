@@ -1,7 +1,7 @@
 # Researcher
 
-A simple monospaced resume theme for Hugo. It was ported from
-the Jekyll theme [ankitsultana/researcher](https://github.com/ankitsultana/researcher).
+A simple monospaced resume theme for Hugo. It was ported from Jekyll theme
+[ankitsultana/researcher](https://github.com/ankitsultana/researcher).
 
 ## Screenshot
 ![thumbnail](https://github.com/ojroques/hugo-researcher/blob/master/images/tn.png)
