@@ -13,6 +13,6 @@
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
     {{ with .Site.Params.favicon }}
-        <link rel="icon" type="image/ico" href="{{ . | relURL }}">
+        <link rel="icon" type="image/ico" href="{{ . | absURL }}">
     {{ end }}
 </head>
