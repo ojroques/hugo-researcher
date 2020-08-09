@@ -4,7 +4,6 @@ $margin-y: 16px;
 $avatar-size: 90px;
 
 // Colors
-$dark: #000000;
 $green: #28a745;
 $red: #dc3545;
 
@@ -18,10 +17,10 @@ $red: #dc3545;
     }
 }
 %link-dark {
-    color: $dark;
+    color: inherit;
     text-decoration: none;
     &:hover {
-        color: $dark;
+        color: inherit;
         text-decoration: underline;
     }
 }
