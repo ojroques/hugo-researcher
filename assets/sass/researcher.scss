@@ -45,13 +45,13 @@
         display: block;
         margin: $margin-y auto;
     }
+    div > ol {
+        padding-left: 0;
+    }
     ol {
         counter-reset: list;
         list-style: none;
-        padding-left: 0;
         & > li {
-            padding-left: 4ch;
-            text-indent: -4ch;
             margin: 4px 0;
             &:before {
                 content: "[" counter(list, decimal) "] ";
@@ -62,9 +62,11 @@
     pre code {
         color: inherit;
     }
+    div > ul {
+        padding-left: 0;
+    }
     ul {
         list-style: inside;
-        padding-left: 0;
         & > li {
             margin: 4px 0;
         }
