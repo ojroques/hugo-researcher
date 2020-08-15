@@ -9,8 +9,7 @@ A simple monospaced resume theme for Hugo. It was ported from Jekyll theme
 ## Installation
 Add the theme to your site's `themes` directory:
 ```bash
-mkdir themes  # if the themes folder does not exist yet
-git clone https://github.com/ojroques/hugo-researcher themes/researcher
+git submodule add https://github.com/ojroques/hugo-researcher.git themes/researcher
 ```
 
 Update the theme option in `config.toml`:
