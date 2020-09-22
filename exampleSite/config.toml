@@ -3,11 +3,12 @@ baseURL = "https://example.com"
 theme = "researcher"
 disableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT"]
 enableEmoji = true
+math = false  # enable KaTeX (https://katex.org/) globally
 
 [params]
   author = "Olivier Roques"
   description = "A simple monospaced resume theme for Hugo."
-  favicon = "favicon.ico"
+  favicon = "favicon.ico"  # path to a .ico to use as favicon
   [params.footer]
     text = "By Olivier Roques"
     url = "https://github.com/ojroques/hugo-researcher"
