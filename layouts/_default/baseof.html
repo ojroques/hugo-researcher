@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
+    {{ if or .Params.math .Site.Params.math }}
+        {{- partial "math.html" . -}}
+    {{ end }}
     <body>
         {{- partial "header.html" . -}}
         <div id="content">
