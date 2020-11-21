@@ -1,31 +1,7 @@
 // Sizes
 $max-width: 750px;
-$margin-y: 16px;
 $avatar-size: 90px;
 
 // Colors
-$green: #28a745;
+$black: #222222;
 $red: #dc3545;
-
-// Placeholders
-%link-default {
-    color: $red;
-    text-decoration: none;
-    &:hover {
-        color: $red;
-        text-decoration: underline;
-    }
-}
-%link-dark {
-    color: inherit;
-    text-decoration: none;
-    &:hover {
-        color: inherit;
-        text-decoration: underline;
-    }
-}
-%table-cell {
-    border: 1px solid #cccccc;
-    padding: 6px 12px;
-    text-align: left;
-}

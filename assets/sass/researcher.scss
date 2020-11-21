@@ -1,8 +1,43 @@
 @import "variables";
 
+// Internal variables
+$y-small: 0.6rem;
+$y-medium: 1.0rem;
+
+// Placeholders
+%link-default {
+    color: $red;
+    text-decoration: none;
+    & * {
+        color: $red;
+    }
+    &:hover {
+        color: $red;
+        text-decoration: underline;
+    }
+}
+%link-dark {
+    color: $black;
+    text-decoration: none;
+    & * {
+        color: $black;
+    }
+    &:hover {
+        color: $black;
+        text-decoration: underline;
+    }
+}
+%table-cell {
+    border: 1px solid #cccccc;
+    padding: 6px 12px;
+    text-align: left;
+}
+
+// Style
 * {
+    color: $black;
     font-family: "Inconsolata";
-    line-height: normal;
+    line-height: 1.2;
 }
 .container {
     max-width: $max-width;
@@ -18,23 +53,13 @@
     a {
         @extend %link-default;
     }
-    blockquote {
-        border-left: 4px solid;
-        font-style: italic;
-        margin: $margin-y 0;
-        padding: 8px 8px;
-        & p {
-            margin: 0;
-        }
-    }
-    code {
-        color: $green;
+    p {
+        margin-bottom: $y-small;
     }
     h1, h2, h3, h4, h5, h6 {
         font-size: medium;
         font-weight: bold;
-        line-height: normal;
-        margin: 1.2rem 0 0.8rem 0;
+        margin: $y-medium 0 $y-small 0;
     }
     @for $i from 1 through 4 {
         h#{$i} {
@@ -43,51 +68,7 @@
     }
     img {
         display: block;
-        margin: $margin-y auto;
-    }
-    div > ol {
-        padding-left: 0;
-    }
-    ol {
-        counter-reset: list;
-        list-style: none;
-        & > li {
-            margin: 4px 0;
-            &:before {
-                content: "[" counter(list, decimal) "] ";
-                counter-increment: list;
-            }
-        }
-    }
-    pre code {
-        color: inherit;
-    }
-    div > ul {
-        padding-left: 0;
-    }
-    ul {
-        list-style: inside;
-        & > li {
-            margin: 4px 0;
-        }
-    }
-    table {
-        margin: $margin-y auto;
-        width: 100%;
-        & tr {
-            background-color: white;
-            border: 1px solid #cccccc;
-            & td {
-                @extend %table-cell;
-            }
-            & th {
-                @extend %table-cell;
-                font-weight: bold;
-            }
-            &:nth-child(2n) {
-                background-color: #f8f8f8;
-            }
-        }
+        margin: $y-medium auto;
     }
     .avatar > img {
         border-radius: 50%;
@@ -96,8 +77,51 @@
         height: $avatar-size;
         width: $avatar-size;
     }
+    ol {
+        counter-reset: list;
+        list-style: none;
+        padding-left: 0;
+        & > li:before {
+            content: "[" counter(list, decimal) "] ";
+            counter-increment: list;
+        }
+    }
+    ul {
+        list-style: inside;
+        padding-left: 0;
+    }
+    table {
+        margin: $y-medium auto;
+        width: 100%;
+        & th {
+            @extend %table-cell;
+            font-weight: bold;
+        }
+        & td {
+            @extend %table-cell;
+        }
+        & tr:nth-child(2n) {
+            background-color: #f8f8f8;
+        }
+    }
+    blockquote {
+        border-left: 4px solid;
+        font-style: italic;
+        margin: $y-medium 0;
+        padding: 8px 8px;
+    }
+    code {
+        color: $black;
+        background-color: #f8f8f8;
+        border: 1px solid #cccccc;
+        border-radius: 10%;
+        padding: 0px 4px;
+    }
+    pre code {
+        all: unset;
+    }
     .highlight {
-        margin: $margin-y auto;
+        margin: $y-medium auto;
         & > pre {
             padding: 8px 8px;
         }
