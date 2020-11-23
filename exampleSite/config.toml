@@ -1,7 +1,7 @@
 title = "Researcher"
 baseURL = "https://example.com"
 theme = "researcher"
-disableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT"]
+disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 math = false  # enable KaTeX (https://katex.org/) globally
 
