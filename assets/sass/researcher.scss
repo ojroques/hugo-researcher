@@ -80,14 +80,20 @@ $y-medium: 1.0rem;
     ol {
         counter-reset: list;
         list-style: none;
-        padding-left: 0;
+        padding-left: 2rem;
         & > li:before {
             content: "[" counter(list, decimal) "] ";
             counter-increment: list;
         }
     }
+    .container > ol {
+        padding-left: 0;
+    }
     ul {
         list-style: inside;
+        padding-left: 2rem;
+    }
+    .container > ul {
         padding-left: 0;
     }
     table {
