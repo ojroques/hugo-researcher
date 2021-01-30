@@ -67,7 +67,7 @@ $y-medium: 1.0rem;
         }
     }
     img {
-        display: block;
+        max-width: 100%;
         margin: $y-medium auto;
     }
     .avatar > img {
