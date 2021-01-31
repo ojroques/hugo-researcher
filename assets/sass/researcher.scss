@@ -1,13 +1,13 @@
 // Sizes
-$max-width: {{ .Param "style.pageWidth" }};
-$avatar-size: {{ .Param "style.avatarSize" }};
+$max-width: {{ .Param "style.pageWidth" | default "750px;" }};
+$avatar-size: {{ .Param "style.avatarSize" | default "90px;" }};
 
 // Colors
-$black: {{ .Param "style.colorBlack" }};
-$red: {{ .Param "style.colorRed" }};
+$black: {{ .Param "style.colorBlack" | default "#222222" }};
+$red: {{ .Param "style.colorRed" | default "#dc3545" }};
 
 // Font
-$font-family: {{ .Param "style.fontFamily" }};
+$font-family: {{ .Param "style.fontFamily" | default "Inconsolata" }};
 
 // Margins
 $y-small: 0.6rem;
