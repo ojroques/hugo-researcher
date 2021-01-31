@@ -67,8 +67,9 @@ $y-medium: 1.0rem;
         }
     }
     img {
-        max-width: 100%;
+        display: block;
         margin: $y-medium auto;
+        max-width: 100%;
     }
     .avatar > img {
         border-radius: 50%;
@@ -86,14 +87,14 @@ $y-medium: 1.0rem;
             counter-increment: list;
         }
     }
-    .container > ol {
+    .container > ol, .footnotes > ol {
         padding-left: 0;
     }
     ul {
         list-style: inside;
         padding-left: 2rem;
     }
-    .container > ul {
+    .container > ul, .footnotes > ul {
         padding-left: 0;
     }
     table {
