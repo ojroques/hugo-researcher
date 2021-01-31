@@ -1,6 +1,15 @@
-@import "variables";
+// Sizes
+$max-width: {{ .Param "style.pageWidth" }};
+$avatar-size: {{ .Param "style.avatarSize" }};
 
-// Internal variables
+// Colors
+$black: {{ .Param "style.colorBlack" }};
+$red: {{ .Param "style.colorRed" }};
+
+// Font
+$font-family: {{ .Param "style.fontFamily" }};
+
+// Margins
 $y-small: 0.6rem;
 $y-medium: 1.0rem;
 
@@ -36,7 +45,7 @@ $y-medium: 1.0rem;
 // Style
 * {
     color: $black;
-    font-family: "Inconsolata";
+    font-family: $font-family;
     line-height: 1.2;
 }
 .container {

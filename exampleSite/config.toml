@@ -14,6 +14,12 @@ googleAnalytics = ""  # add your tracking id
   [params.footer]
     text = "By Olivier Roques"
     url = "https://github.com/ojroques/hugo-researcher"
+  [params.style]  # appearance options (can be modified but not removed)
+    fontFamily = "Inconsolata"
+    pageWidth = "750px"
+    avatarSize = "90px"
+    colorBlack = "#222222"
+    colorRed = "#dc3545"
 
 [permalinks]
   "/" = "/:filename"
