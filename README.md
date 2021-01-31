@@ -13,6 +13,8 @@ This theme uses Sass to generate CSS files so make sure you have the
 Add the theme to your site's `themes` directory:
 ```bash
 git submodule add https://github.com/ojroques/hugo-researcher.git themes/researcher
+# if your website is not managed by git:
+# git clone https://github.com/ojroques/hugo-researcher.git themes/researcher
 ```
 
 Update the theme option in `config.toml`:
