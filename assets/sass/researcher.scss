@@ -90,10 +90,18 @@ $y-medium: 1.0rem;
     ol {
         counter-reset: list;
         list-style: none;
+        display: table;
         padding-left: 2rem;
+        & > li {
+            counter-increment: list;
+            display: table-row;
+        }
         & > li:before {
             content: "[" counter(list, decimal) "] ";
             counter-increment: list;
+            display: table-cell;
+            text-align: right;
+            padding-right: .5em;
         }
     }
     .container > ol, .footnotes > ol {
@@ -102,6 +110,10 @@ $y-medium: 1.0rem;
     ul {
         list-style: inside;
         padding-left: 2rem;
+        & > li {
+            list-style-position: outside;
+            margin-left: 1em;
+        }
     }
     .container > ul, .footnotes > ul {
         padding-left: 0;
