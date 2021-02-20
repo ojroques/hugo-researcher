@@ -93,7 +93,6 @@ $y-medium: 1.0rem;
         display: table;
         padding-left: 2rem;
         & > li {
-            counter-increment: list;
             display: table-row;
         }
         & > li:before {
