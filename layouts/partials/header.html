@@ -1,6 +1,6 @@
 <div class="container mt-5">
     <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
-        <a class="navbar-brand mx-0 mr-sm-auto" href="{{ .Site.BaseURL }}">
+        <a class="navbar-brand mx-0 mr-sm-auto" href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}">
           {{ with .Site.Params.logo }}
             <img src="{{ . | absURL }}" alt="logo">
           {{ end }}
@@ -10,7 +10,7 @@
             {{ with .Site.Menus.main }}
                 {{ $navbar_len := len . }}
                 {{ range $i, $nav_item := . }}
-                    <a class="nav-item nav-link" href="{{ $nav_item.URL }}">
+                    <a class="nav-item nav-link" href="{{ $nav_item.URL }}" title="{{ $nav_item.Name }}">
                         {{ $nav_item.Pre }}{{ $nav_item.Name }}{{ $nav_item.Post }}
                     </a>
                     {{ if ne (add $i 1) $navbar_len }}
