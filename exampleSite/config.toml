@@ -20,6 +20,14 @@ googleAnalytics = ""  # add your tracking id
     avatarSize = "90px"
     colorBlack = "#222222"
     colorRed = "#dc3545"
+  [[params.socialIcons]]
+    icon = "fab fa-twitter"
+    title = "Twitter"
+    url = "https://twitter.com/"
+  [[params.socialIcons]]
+    icon = "fas fa-envelope"
+    title = "E-mail"
+    url = "mailto:mail@example.com"
 
 [permalinks]
   "/" = "/:filename"
