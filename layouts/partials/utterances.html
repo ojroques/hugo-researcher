@@ -1,0 +1,9 @@
+{{ if .Site.Params.utterances.repo }}
+<script src="https://utteranc.es/client.js"
+        repo="{{.Site.Params.utterances.repo}}"
+        issue-term="{{.Site.Params.utterances.issueTerm | default "pathname"}}"
+        theme="{{.Site.Params.utterances.theme | default "preferred-color-scheme"}}"
+        crossorigin="anonymous"
+        async>
+</script>
+{{ end }}

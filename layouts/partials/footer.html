@@ -1,5 +1,9 @@
 <div id="footer" class="mb-5">
     <hr>
+    {{ if eq .Type "post" }}
+      {{ template "partials/utterances.html" . }}
+    {{ end }}
+    <hr>
     <div class="container text-center">
         {{ range $item := .Site.Params.socialIcons }}
             <a href="{{ $item.url }}" class="{{ $item.icon }} fa-1x" title="{{ $item.title }}"></a>
