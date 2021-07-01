@@ -27,9 +27,24 @@ A self-explanatory configuration file is present in
 [exampleSite/config.toml](https://github.com/ojroques/hugo-researcher/blob/master/exampleSite/config.toml),
 along the files of a demo website.
 
+## KaTeX
 You can enable [KaTeX](https://katex.org/) (math typesetting) by including
 `math: true` in your content files. Or you can enable it globally by setting
 `math` to `true` in your project config.
+
+Hugo introduces tags when it sees newlines which breaks KaTeX block
+environments. The theme has a `math` shortcode to circumvent this issue:
+```md
+{{< math >}}
+\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}
+{{< /math >}}
+```
+Check [this
+issue](https://github.com/ojroques/hugo-researcher/issues/1#issuecomment-697247056)
+for more details.
 
 ## License
 [GPL-3.0 License](https://github.com/ojroques/hugo-researcher/blob/master/LICENSE)
