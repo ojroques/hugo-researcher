@@ -11,6 +11,10 @@ googleAnalytics = ""  # add your tracking id
   description = "A simple monospaced resume theme for Hugo."
   favicon = "favicon.ico"  # path to a .ico to use as favicon
   logo = ""  # url or path to a logo to put in the header
+  [params.utterances]
+    repo = "ojroques/comments-hugo-researcher"
+    issueTerm = "pathname"
+    theme = "github-light" # preferred-color-scheme, github-light, github-dark
   [params.footer]
     text = "By Olivier Roques"
     url = "https://github.com/ojroques/hugo-researcher"
