@@ -4,7 +4,7 @@ A simple monospaced resume theme for Hugo. It was ported from Jekyll theme
 [ankitsultana/researcher](https://github.com/ankitsultana/researcher).
 
 ## Screenshot
-![thumbnail](https://github.com/ojroques/hugo-researcher/blob/master/images/tn.png)
+![screenshot](https://user-images.githubusercontent.com/23409060/188607083-dd087121-16f9-4706-b8b9-a0e4c9e35d93.png)
 
 ## Installation
 This theme uses Sass to generate CSS files so make sure you have the
