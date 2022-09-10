@@ -8,6 +8,7 @@ $red: {{ .Param "style.colorRed" | default "#dc3545" }};
 
 // Font
 $font-family: {{ .Param "style.fontFamily" | default "Inconsolata" }};
+$font-size: {{ .Param "style.fontSize" | default "14pt" }};
 
 // Margins
 $y-small: 0.6rem;
@@ -46,6 +47,7 @@ $y-medium: 1.0rem;
 * {
     color: $black;
     font-family: $font-family;
+    font-size: $font-size;
     line-height: 1.2;
 }
 .container {
