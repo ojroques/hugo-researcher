@@ -25,4 +25,8 @@
     {{ if not .Site.IsServer }}
         {{ template "_internal/google_analytics.html" . }}
     {{ end }}
+
+    {{ if .Params.noindex }}
+        <meta name="robots" content="noindex">
+    {{ end }}
 </head>
