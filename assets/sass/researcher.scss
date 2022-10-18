@@ -1,6 +1,6 @@
 // Sizes
 $max-width: {{ .Param "style.pageWidth" | default "750px;" }};
-$avatar-size: {{ .Param "style.avatarSize" | default "90px;" }};
+$avatar-size: {{ .Param "style.avatarSize" | default "150px;" }};
 
 // Colors
 $black: {{ .Param "style.colorBlack" | default "#222222" }};
