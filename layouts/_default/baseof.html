@@ -11,7 +11,7 @@
         </div>
         {{- partial "footer.html" . -}}
 
-        {{ if and (not .Site.IsServer) .Site.Data.consent }}
+        {{ if and (not hugo.IsServer) .Site.Data.consent }}
         {{- partial "consent.html" . -}}
         {{ end }}
     </body>
