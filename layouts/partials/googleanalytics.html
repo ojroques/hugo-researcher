@@ -1,5 +1,7 @@
 {{- $pc := .Site.Config.Privacy.GoogleAnalytics -}}
 {{- if not $pc.Disable }}{{ with .Site.Config.Services.GoogleAnalytics.ID -}}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
 <script>
 {{- if not $pc.RespectDoNotTrack -}}
 var doNotTrack = false;
@@ -11,7 +13,7 @@ if (!doNotTrack) {
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
-	gtag('config', '{{ site.Config.Services.GoogleAnalytics.ID }}');
+	gtag('config', '{{ . }}');
 }
 </script>
 {{- end -}}
